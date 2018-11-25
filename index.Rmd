@@ -1,0 +1,50 @@
+---
+title: "Final Report"
+description: |
+  This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.
+author:
+  - name: Travis Sondgerath 
+date: "`r Sys.Date()`"
+output:
+  radix::radix_article:
+    toc: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      message = F)
+```
+
+# Project Background
+
+This contract was entered into in order to assist PEPFAR-supported countries to further advance and sustain access to quality-assured HIV laboratory services and bridge the gaps towards the 90-90-90
+targets.
+
+This agreement involves a number of organizations including the Institut de Recherche en Sante, de Surveillance Epidemiologique et de Formation/Cheikh Anta Diop University (IRESSEF/CADU), African Society for Laboratory Medicine (ASLM), and Africa Centers for Disease Control and Prevention (Africa CDC), through a cooperative agreement with the U.S. Centers for Disease Control and Prevention (CDC). 
+
+# Project Tools
+
+## Git
+
+[Git](https://en.wikipedia.org/wiki/Git) is a version control system for tracking changes on files being worked on by multiple people. Git can be used for many purposes, however most of the guidance I used for this project came from a guidebook developed for using [R with Git](http://happygitwithr.com/). 
+
+I downloaded Git [for Windows](https://gitforwindows.org/) and paired it with the project gmail account using the instructions referenced above.
+
+## GitHub
+
+## GitKraken
+
+## R and Rstudio
+
+# Example Results
+
+# Conclusions
+
+
+
+
+
+
+
