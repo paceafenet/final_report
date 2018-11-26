@@ -8,7 +8,7 @@ date: "`r Sys.Date()`"
 output:
   radix::radix_article:
     toc: true
-    toc_depth: 2
+    toc_depth: 3
 ---
 
 ```{r setup, include=FALSE}
@@ -28,15 +28,37 @@ This agreement involves a number of organizations including the Institut de Rech
 
 ## Git
 
-[Git](https://en.wikipedia.org/wiki/Git) is a version control system for tracking changes on files being worked on by multiple people. Git can be used for many purposes, however most of the guidance I used for this project came from a guidebook developed for using [R with Git](http://happygitwithr.com/). 
+[Git](https://en.wikipedia.org/wiki/Git) is a version control system for tracking changes made to files being worked on by multiple people. Git can be used for many purposes, however, for this project I used Git to update code used for this project and to document progress for accountability. Most of the guidance I used for this project came from a guidebook developed for using [R with Git](http://happygitwithr.com/). 
 
-I downloaded Git [for Windows](https://gitforwindows.org/) and paired it with the project gmail account using the instructions referenced above.
+I downloaded Git [for Windows](https://gitforwindows.org/) and paired it with the project Gmail account using the guidebook referenced above.
 
 ## GitHub
 
+[GitHub](https://github.com/about) is a popular repository cite for Git projects with both paid and free account options. There are many other competing repositories. I chose GitHub as it is a very easy to use repository and is very popular among the R user community. Additionally, GitHub has recently launched [GitHub Pages](https://help.github.com/articles/what-is-github-pages/), an easy to use tool to generate a web page from a GitHub repository. 
+
+This report, as well as my weekly progress reports were produced using GitHub Pages.
+
 ## GitKraken
 
+I find it easiest to think of a Git project as a folder directory composed of many files and folders which among other things can contain code. Pushing a Git project to GitHub is like making a copy of the folders that are on your local machine to an online repository using the same directory structure. 
+
+Copying the folders to a repository after making changes is referred to as a "commit." It is possible to manage Git projects and make commits with shell commands. It is recommended in the user guide above that instead of using shell commands, project managers should use a product specifically for managing Git projects. [GitKraken](https://www.gitkraken.com/about) is one such product and was strongly recommended in the user guide above. I associated the project Gmail account with GitKraken, GitHub, and Git.
+
 ## R and Rstudio
+
+All project analysis was done in [R](https://www.r-project.org/about.html) an open-sourced language for statistical computing using [RStudio](https://www.rstudio.com/about/), the preferred IDE for programming in R. In this section I highlight important packages used for this project.
+
+### Tidyverse
+
+### R Markdown
+
+### Radix
+
+### Flexdashboard
+
+### Leaflet
+
+### Shiny
 
 # Example Results
 

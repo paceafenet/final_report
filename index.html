@@ -25,8 +25,8 @@
   
   
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2018-11-25" />
-  <meta property="article:created" itemprop="dateCreated" content="2018-11-25" />
+  <meta property="article:published" itemprop="datePublished" content="2018-11-26" />
+  <meta property="article:created" itemprop="dateCreated" content="2018-11-26" />
   <meta name="article:author" content="Travis Sondgerath" />
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -44,7 +44,7 @@
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Final Report"]},{"type":"character","attributes":{},"value":["This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Travis Sondgerath"]}]}]},{"type":"character","attributes":{},"value":["2018-11-25"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["radix::radix_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Final Report"]},{"type":"character","attributes":{},"value":["This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Travis Sondgerath"]}]}]},{"type":"character","attributes":{},"value":["2018-11-26"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["radix::radix_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1938,7 +1938,7 @@ distill-header .nav a {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Final Report","description":"This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.","authors":[{"author":"Travis Sondgerath","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2018-11-25T00:00:00.000-06:00","citationText":"Sondgerath, 2018"}
+{"title":"Final Report","description":"This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.","authors":[{"author":"Travis Sondgerath","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2018-11-26T00:00:00.000-06:00","citationText":"Sondgerath, 2018"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1955,7 +1955,7 @@ distill-header .nav a {
 <div class="d-byline">
   Travis Sondgerath  
   
-<br />2018-11-25
+<br />2018-11-26
 </div>
 
 <div class="d-article">
@@ -1967,7 +1967,14 @@ distill-header .nav a {
 <li><a href="#git">Git</a></li>
 <li><a href="#github">GitHub</a></li>
 <li><a href="#gitkraken">GitKraken</a></li>
-<li><a href="#r-and-rstudio">R and Rstudio</a></li>
+<li><a href="#r-and-rstudio">R and Rstudio</a><ul>
+<li><a href="#tidyverse">Tidyverse</a></li>
+<li><a href="#r-markdown">R Markdown</a></li>
+<li><a href="#radix">Radix</a></li>
+<li><a href="#flexdashboard">Flexdashboard</a></li>
+<li><a href="#leaflet">Leaflet</a></li>
+<li><a href="#shiny">Shiny</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#example-results">Example Results</a></li>
 <li><a href="#conclusions">Conclusions</a></li>
@@ -1979,11 +1986,22 @@ distill-header .nav a {
 <p>This agreement involves a number of organizations including the Institut de Recherche en Sante, de Surveillance Epidemiologique et de Formation/Cheikh Anta Diop University (IRESSEF/CADU), African Society for Laboratory Medicine (ASLM), and Africa Centers for Disease Control and Prevention (Africa CDC), through a cooperative agreement with the U.S. Centers for Disease Control and Prevention (CDC).</p>
 <h1 id="project-tools">Project Tools</h1>
 <h2 id="git">Git</h2>
-<p><a href="https://en.wikipedia.org/wiki/Git">Git</a> is a version control system for tracking changes on files being worked on by multiple people. Git can be used for many purposes, however most of the guidance I used for this project came from a guidebook developed for using <a href="http://happygitwithr.com/">R with Git</a>.</p>
-<p>I downloaded Git <a href="https://gitforwindows.org/">for Windows</a> and paired it with the project gmail account using the instructions referenced above.</p>
+<p><a href="https://en.wikipedia.org/wiki/Git">Git</a> is a version control system for tracking changes made to files being worked on by multiple people. Git can be used for many purposes, however, for this project I used Git to update code used for this project and to document progress for accountability. Most of the guidance I used for this project came from a guidebook developed for using <a href="http://happygitwithr.com/">R with Git</a>.</p>
+<p>I downloaded Git <a href="https://gitforwindows.org/">for Windows</a> and paired it with the project Gmail account using the guidebook referenced above.</p>
 <h2 id="github">GitHub</h2>
+<p><a href="https://github.com/about">GitHub</a> is a popular repository cite for Git projects with both paid and free account options. There are many other competing repositories. I chose GitHub as it is a very easy to use repository and is very popular among the R user community. Additionally, GitHub has recently launched <a href="https://help.github.com/articles/what-is-github-pages/">GitHub Pages</a>, an easy to use tool to generate a web page from a GitHub repository.</p>
+<p>This report, as well as my weekly progress reports were produced using GitHub Pages.</p>
 <h2 id="gitkraken">GitKraken</h2>
+<p>I find it easiest to think of a Git project as a folder directory composed of many files and folders which among other things can contain code. Pushing a Git project to GitHub is like making a copy of the folders that are on your local machine to an online repository using the same directory structure.</p>
+<p>Copying the folders to a repository after making changes is referred to as a “commit.” It is possible to manage Git projects and make commits with shell commands. It is recommended in the user guide above that instead of using shell commands, project managers should use a product specifically for managing Git projects. <a href="https://www.gitkraken.com/about">GitKraken</a> is one such product and was strongly recommended in the user guide above. I associated the project Gmail account with GitKraken, GitHub, and Git.</p>
 <h2 id="r-and-rstudio">R and Rstudio</h2>
+<p>All project analysis was done in <a href="https://www.r-project.org/about.html">R</a> an open-sourced language for statistical computing using <a href="https://www.rstudio.com/about/">RStudio</a>, the preferred IDE for programming in R. In this section I highlight important packages used for this project.</p>
+<h3 id="tidyverse">Tidyverse</h3>
+<h3 id="r-markdown">R Markdown</h3>
+<h3 id="radix">Radix</h3>
+<h3 id="flexdashboard">Flexdashboard</h3>
+<h3 id="leaflet">Leaflet</h3>
+<h3 id="shiny">Shiny</h3>
 <h1 id="example-results">Example Results</h1>
 <h1 id="conclusions">Conclusions</h1>
 <!--radix_placeholder_article_footer-->
