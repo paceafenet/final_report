@@ -30,7 +30,7 @@ This agreement involves a number of organizations including the Institut de Rech
 
 [Git](https://en.wikipedia.org/wiki/Git) is a version control system for tracking changes made to files being worked on by multiple people. Git can be used for many purposes, however, for this project I used Git to update code used for this project and to document progress for accountability. Most of the guidance I used for this project came from a guidebook developed for using [R with Git](http://happygitwithr.com/). 
 
-I downloaded Git [for Windows](https://gitforwindows.org/) and paired it with the project Gmail account using the guidebook referenced above.
+I downloaded [Git for Windows](https://gitforwindows.org/) and paired it with the project Gmail account using the guidebook referenced above.
 
 ## GitHub
 
@@ -46,7 +46,7 @@ Copying the folders to a repository after making changes is referred to as a "co
 
 ## R and Rstudio
 
-All project analysis was done in [R](https://www.r-project.org/about.html) an open-sourced language for statistical computing using [RStudio](https://www.rstudio.com/about/), the preferred IDE for programming in R. In this section I highlight important packages used for this project.
+All project analysis was done in [R](https://www.r-project.org/about.html), an open-sourced language for statistical computing using [RStudio](https://www.rstudio.com/about/), the preferred IDE for programming in R. In this section I highlight important packages used for this project.
 
 ### Tidyverse
 
