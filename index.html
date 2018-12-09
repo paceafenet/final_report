@@ -25,8 +25,8 @@
   
   
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2018-12-02" />
-  <meta property="article:created" itemprop="dateCreated" content="2018-12-02" />
+  <meta property="article:published" itemprop="datePublished" content="2018-12-09" />
+  <meta property="article:created" itemprop="dateCreated" content="2018-12-09" />
   <meta name="article:author" content="Travis Sondgerath" />
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -44,7 +44,7 @@
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Final Report"]},{"type":"character","attributes":{},"value":["This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Travis Sondgerath"]}]}]},{"type":"character","attributes":{},"value":["2018-12-02"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["radix::radix_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Final Report"]},{"type":"character","attributes":{},"value":["This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Travis Sondgerath"]}]}]},{"type":"character","attributes":{},"value":["2018-12-09"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["radix::radix_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1938,7 +1938,7 @@ distill-header .nav a {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Final Report","description":"This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.","authors":[{"author":"Travis Sondgerath","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2018-12-02T00:00:00.000-06:00","citationText":"Sondgerath, 2018"}
+{"title":"Final Report","description":"This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.","authors":[{"author":"Travis Sondgerath","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2018-12-09T00:00:00.000-06:00","citationText":"Sondgerath, 2018"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1955,7 +1955,7 @@ distill-header .nav a {
 <div class="d-byline">
   Travis Sondgerath  
   
-<br />2018-12-02
+<br />2018-12-09
 </div>
 
 <div class="d-article">
@@ -1972,8 +1972,11 @@ distill-header .nav a {
 <li><a href="#r-markdown">R Markdown</a></li>
 <li><a href="#radix">Radix</a></li>
 <li><a href="#flexdashboard">Flexdashboard</a></li>
-<li><a href="#leaflet">Leaflet</a></li>
 <li><a href="#shiny">Shiny</a></li>
+<li><a href="#rodbc">RODBC</a></li>
+<li><a href="#pdquickmap">pdquickmap</a></li>
+<li><a href="#googlesheets">googlesheets</a></li>
+<li><a href="#leaflet">Leaflet</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#example-results">Example Results</a></li>
@@ -2000,8 +2003,16 @@ distill-header .nav a {
 <h3 id="r-markdown">R Markdown</h3>
 <h3 id="radix">Radix</h3>
 <h3 id="flexdashboard">Flexdashboard</h3>
-<h3 id="leaflet">Leaflet</h3>
 <h3 id="shiny">Shiny</h3>
+<h3 id="rodbc">RODBC</h3>
+<p>The <a href="https://cran.r-project.org/web/packages/RODBC/vignettes/RODBC.pdf">RODBC</a> package provides a uniform interface for most popular database structures. SQL commands are sent to the database structure as strings as an argument in a function.</p>
+<p>A different function is used for each database structure. For example, the odbcConnect function can be used to connect to databases defined in your administrative tools settings. In the present work I used the odbcConnectAccess2007 function to interface the Microsoft Access databases used to store in-country data in Nigeria and Cameroon.</p>
+<h3 id="pdquickmap">pdquickmap</h3>
+<p>There are a number of popular API’s used to query mapping data including the Google Maps and MapQuest API. Because Google Maps recently changed their policy regarding their API and is requiring users submit a payment method before receiving an API key even if the number of requests sent to the API are under the payment threshold, I chose to find an API that does not require a payment method to generate an API key.</p>
+<p>The <a href="https://github.com/tarakc02/pdquickmap">pdquickmap</a> package provides an interface for both the Google Maps and MapQuest API’s. I setup a project account at the <a href="https://developer.mapquest.com/">MapQuest Developer</a> using the project Gmail account.</p>
+<h3 id="googlesheets">googlesheets</h3>
+<p><a href="https://cran.r-project.org/web/packages/googlesheets/vignettes/basic-usage.html">googlesheets</a> is a package developed by RStudio for accessing Google sheets. This package allows the user to read and write data stored in Google Sheets. Additionally, this package contains functions for authenticating your Google account within R.</p>
+<h3 id="leaflet">Leaflet</h3>
 <h1 id="example-results">Example Results</h1>
 <h1 id="conclusions">Conclusions</h1>
 <!--radix_placeholder_article_footer-->

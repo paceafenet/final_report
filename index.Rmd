@@ -56,9 +56,25 @@ All project analysis was done in [R](https://www.r-project.org/about.html), an o
 
 ### Flexdashboard
 
-### Leaflet
-
 ### Shiny
+
+### RODBC
+
+The [RODBC](https://cran.r-project.org/web/packages/RODBC/vignettes/RODBC.pdf) package provides a uniform interface for most popular database structures. SQL commands are sent to the database structure as strings as an argument in a function. 
+
+A different function is used for each database structure. For example, the odbcConnect function can be used to connect to databases defined in your administrative tools settings. In the present work I used the odbcConnectAccess2007 function to interface the Microsoft Access databases used to store in-country data in Nigeria and Cameroon.   
+
+### pdquickmap
+
+There are a number of popular API's used to query mapping data including the Google Maps and MapQuest API. Because Google Maps recently changed their policy regarding their API and is requiring users submit a payment method before receiving an API key even if the number of requests sent to the API are under the payment threshold, I chose to find an API that does not require a payment method to generate an API key. 
+
+The [pdquickmap](https://github.com/tarakc02/pdquickmap) package provides an interface for both the Google Maps and MapQuest API's. I setup a project account at the [MapQuest Developer](https://developer.mapquest.com/) using the project Gmail account.
+
+### googlesheets
+
+[googlesheets](https://cran.r-project.org/web/packages/googlesheets/vignettes/basic-usage.html) is a package developed by RStudio for accessing Google sheets. This package allows the user to read and write data stored in Google Sheets. Additionally, this package contains functions for authenticating your Google account within R.
+
+### Leaflet
 
 # Example Results
 
