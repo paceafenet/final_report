@@ -74,9 +74,17 @@ The [pdquickmap](https://github.com/tarakc02/pdquickmap) package provides an int
 
 [googlesheets](https://cran.r-project.org/web/packages/googlesheets/vignettes/basic-usage.html) is a package developed by RStudio for accessing Google sheets. This package allows the user to read and write data stored in Google Sheets. Additionally, this package contains functions for authenticating your Google account within R.
 
-### Leaflet
+### leaflet
+
+[leaflet](https://rstudio.github.io/leaflet/) is a popular JavaScript library for developing interactive maps. The leaflet package developed is used to interface with this library using R. Leaflet provides basemap 'tiles' that can be used as base maps from map providers including Google Maps and Open Street Maps. 
+
+### DT
+
+The [DT](https://rstudio.github.io/DT/) library provides an interface to the popular JavaScript DataTables library for making interactive tables in R. The primary function in this package is the datatables function which allows the developer to control conditional formatting of cells based on values in the table, finer control over column and cell size and formatting, the ability to add a search filter, and the ability to allow the user to edit the underlying data behind the table if desired. 
 
 # Example Results
+
+
 
 # Conclusions
 
