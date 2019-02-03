@@ -22,19 +22,19 @@ knitr::opts_chunk$set(echo = F,
 This contract was entered into in order to assist PEPFAR-supported countries to further advance and sustain access to quality-assured HIV laboratory services and bridge the gaps towards the 90-90-90
 targets.
 
-This agreement involves a number of organizations including the Institut de Recherche en Sante, de Surveillance Epidemiologique et de Formation/Cheikh Anta Diop University (IRESSEF/CADU), African Society for Laboratory Medicine (ASLM), and Africa Centers for Disease Control and Prevention (Africa CDC), through a cooperative agreement with the U.S. Centers for Disease Control and Prevention (CDC). 
+This agreement involves a number of organizations including the Institut de Recherche en Sante, de Surveillance Epidemiologique et de Formation/Cheikh Anta Diop University (IRESSEF/CADU), the African Society for Laboratory Medicine (ASLM), and Africa Centers for Disease Control and Prevention (Africa CDC), through a cooperative agreement with the U.S. Centers for Disease Control and Prevention (CDC). 
 
 # Project Tools
 
 ## Git
 
-[Git](https://en.wikipedia.org/wiki/Git) is a version control system for tracking changes made to files being worked on by multiple people. Git can be used for many purposes, however, for this project I used Git to update code used for this project and to document progress for accountability. Most of the guidance I used for this project came from a guidebook developed for using [R with Git](http://happygitwithr.com/). 
+[Git](https://en.wikipedia.org/wiki/Git) is a version control system for tracking changes made to files being worked on by multiple people. Git can be used for many purposes, however, for this project I used Git to update code used for this project and to document progress for accountability. Most of the guidance I used for this project came from a [guidebook](http://happygitwithr.com/) developed for using R with Git. 
 
-I downloaded [Git for Windows](https://gitforwindows.org/) and paired it with the project Gmail account using the guidebook referenced above.
+I downloaded [Git for Windows](https://gitforwindows.org/) and paired it with the project Gmail account using the instructions in the guidebook referenced above.
 
 ## GitHub
 
-[GitHub](https://github.com/about) is a popular repository cite for Git projects with both paid and free account options. There are many other competing repositories. I chose GitHub as it is a very easy to use repository and is very popular among the R user community. Additionally, GitHub has recently launched [GitHub Pages](https://help.github.com/articles/what-is-github-pages/), an easy to use tool to generate a web page from a GitHub repository. 
+[GitHub](https://github.com/about) is a popular repository cite for Git projects with both paid and free account options. There are many other competing repositories, I chose GitHub as it is a very easy to use repository and is very popular among the R user community. Additionally, GitHub has recently launched [GitHub Pages](https://help.github.com/articles/what-is-github-pages/), an easy to use tool to generate a web page from a GitHub repository. 
 
 This report, as well as my weekly progress reports were produced using GitHub Pages.
 
@@ -42,7 +42,7 @@ This report, as well as my weekly progress reports were produced using GitHub Pa
 
 I find it easiest to think of a Git project as a folder directory composed of many files and folders which among other things can contain code. Pushing a Git project to GitHub is like making a copy of the folders that are on your local machine to an online repository using the same directory structure. 
 
-Copying the folders to a repository after making changes is referred to as a "commit." It is possible to manage Git projects and make commits with shell commands. It is recommended in the user guide above that instead of using shell commands, project managers should use a product specifically for managing Git projects. [GitKraken](https://www.gitkraken.com/about) is one such product and was strongly recommended in the user guide above. I associated the project Gmail account with GitKraken, GitHub, and Git.
+Copying the folders to a repository after making changes is referred to as a "commit." It is possible to manage Git projects and make commits with shell commands. However, it is recommended in the user guide above that instead of using shell commands, project managers should use a product specifically for managing Git projects. [GitKraken](https://www.gitkraken.com/about) is one such product which is free and was strongly recommended in the user guide above. I associated the project Gmail account with GitKraken, GitHub, and Git.
 
 ## R and Rstudio
 
@@ -50,13 +50,25 @@ All project analysis was done in [R](https://www.r-project.org/about.html), an o
 
 ### Tidyverse
 
+The [Tidyverse](https://www.tidyverse.org/) is a collection of libraries developed and popularized by RStudio and RStudio Chief Data Scientist, [Hadley Wickham](https://en.wikipedia.org/wiki/Hadley_Wickham). These libraries are part of the core tool box for any R programmer. Although there are a growing number of libraries that compose the Tidyverse, these libraries are primarily developed to manipulate, describe, and visualize data. Most importantly these libraries have influenced the way the R user community program in R. These libraries introduced now ubiquitous R programming conventions including "pipes" which link functions together and the use of "+" signs to add layers to visuals. It is my personal belief that dplyr and ggplot are the most important libraries in the Tidyverse and were used by me throughout this project. 
+
 ### R Markdown
+
+[R Markdown](https://rmarkdown.rstudio.com/index.html) is a markup framework designed to allow the user to create reports incorporating text, statistical results and visuals. This framework allows for creating reproducible analysis. Although R Markdown allows for many output formats including pdf, html, websites, PowerPoint, etc the interface for programming in R Markdown is meant to be a stripped down version of alternatives like LaTex, which are more complex.
+
+Every report, website page, and even the eTool itself was developed in an R Markdown document for this project. 
 
 ### Radix
 
+[Radix](https://blog.rstudio.com/2018/09/19/radix-for-r-markdown/) is a new library in the R Markdown universe. This package allows for more flexible figure placement, which is lacking from R Markdown currently and makes it easier to write journal publish-ready articles. Additional functionality is available for writing blogs and websites using Radix as well. This report is in fact a Radix Article. 
+
 ### Flexdashboard
 
+[Flexdashboard](https://rmarkdown.rstudio.com/flexdashboard/) is yet library in the R Markdown universe. Flexdashboard layouts allow the user to to organize containers for a page more easily than the existing functionality in R Markdown. The eTool was designed using a Flexdashboard layout. 
+
 ### Shiny
+
+[Shiny](https://shiny.rstudio.com/) is a library used to build interactive web applications. I built the eTool using Shiny inside a Flexdashboard layout. In most Shiny applications the user interacts with the data underlying the application using the interface designed by the developer and the data is the same for all users. However, for the eTool the user needed to be able to update the underlying equipment data. In order to do this the application needs access to the data in real time, also know as [persistent data storage](https://shiny.rstudio.com/articles/persistent-data-storage.html). 
 
 ### RODBC
 
@@ -66,9 +78,9 @@ A different function is used for each database structure. For example, the odbcC
 
 ### pdquickmap
 
-There are a number of popular API's used to query mapping data including the Google Maps and MapQuest API. Because Google Maps recently changed their policy regarding their API and is requiring users submit a payment method before receiving an API key even if the number of requests sent to the API are under the payment threshold, I chose to find an API that does not require a payment method to generate an API key. 
+There are a number of popular API's used to query mapping data including the Google Maps and MapQuest API's. Because Google Maps recently changed their policy regarding their API and is requiring users submit a payment method before receiving an API key even if the number of requests sent to the API are under the payment threshold, I chose to find an API that does not require a payment method to generate an API key. 
 
-The [pdquickmap](https://github.com/tarakc02/pdquickmap) package provides an interface for both the Google Maps and MapQuest API's. I setup a project account at the [MapQuest Developer](https://developer.mapquest.com/) using the project Gmail account.
+The [pdquickmap](https://github.com/tarakc02/pdquickmap) package provides an interface for both the Google Maps and MapQuest API's. I setup a project account at the [MapQuest Developer Portal](https://developer.mapquest.com/) using the project Gmail account.
 
 ### googlesheets
 
@@ -76,18 +88,17 @@ The [pdquickmap](https://github.com/tarakc02/pdquickmap) package provides an int
 
 ### leaflet
 
-[leaflet](https://rstudio.github.io/leaflet/) is a popular JavaScript library for developing interactive maps. The leaflet package developed is used to interface with this library using R. Leaflet provides basemap 'tiles' that can be used as base maps from map providers including Google Maps and Open Street Maps. 
+[leaflet](https://rstudio.github.io/leaflet/) is a popular JavaScript library for developing interactive maps. The leaflet package allows the user to interface with the leaflet.js API using R. Leaflet provides basemap 'tiles' that can be used as base maps from map providers including Google Maps and Open Street Maps. 
 
 ### DT
 
-The [DT](https://rstudio.github.io/DT/) library provides an interface to the popular JavaScript DataTables library for making interactive tables in R. The primary function in this package is the datatables function which allows the developer to control conditional formatting of cells based on values in the table, finer control over column and cell size and formatting, the ability to add a search filter, and the ability to allow the user to edit the underlying data behind the table if desired. 
+The [DT](https://rstudio.github.io/DT/) library provides an interface to the popular JavaScript DataTables library for making interactive tables. The primary function in this package is the datatables function which allows the developer to control conditional formatting of cells based on values in the table, finer control over column and cell size and formatting, the ability to add a search filter, and the ability to allow the user to edit the underlying data behind the table if desired. 
 
 ### Blastula
 
-The [blastula](https://github.com/rich-iannone/blastula) can be used to create emails in R. Credentials can be passed to nearly any email service, and using popular services such as gmail is extremely easy to implement using this library. This library converts text, tables, and figures to html that can be passed to the chosen email service. We may or may not have used the functionality in this package for this project. However, I was asked it it were possible to schedule reports and notify partners to view the eTool, using a library such as blastula is necessary to do this without commercial software. 
+The [blastula](https://github.com/rich-iannone/blastula) library can be used to create emails in R. Credentials can be passed to nearly any email service, and using popular services such as gmail is extremely easy to implement using this library. This library converts text, tables, and figures to html that can be passed to the chosen email service. I was asked it it were possible to schedule reports and notify partners to view the eTool, using a library such as blastula is necessary to do this in the absence commercial software. 
 
-# Example Results
-
+# Deliverable
 
 
 # Conclusions
