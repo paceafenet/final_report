@@ -98,7 +98,7 @@ The [DT](https://rstudio.github.io/DT/) library provides an interface to the pop
 
 The [blastula](https://github.com/rich-iannone/blastula) library can be used to create emails in R. Credentials can be passed to nearly any email service, and using popular services such as gmail is extremely easy to implement using this library. This library converts text, tables, and figures to html that can be passed to the chosen email service. I was asked it it were possible to schedule reports and notify partners to view the eTool, using a library such as blastula is necessary to do this in the absence commercial software. 
 
-# Deliverable
+# Deliverables
 
 
 # Conclusions
