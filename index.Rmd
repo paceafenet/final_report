@@ -34,7 +34,7 @@ I downloaded [Git for Windows](https://gitforwindows.org/) and paired it with th
 
 ## GitHub
 
-[GitHub](https://github.com/about) is a popular repository cite for Git projects with both paid and free account options. There are many other competing repositories, I chose GitHub as it is a very easy to use repository and is very popular among the R user community. Additionally, GitHub has recently launched [GitHub Pages](https://help.github.com/articles/what-is-github-pages/), an easy to use tool to generate a web page from a GitHub repository. 
+[GitHub](https://github.com/about) is a popular repository site for Git projects with both paid and free account options. There are many other competing repositories, I chose GitHub as it is a very easy to use repository and is very popular among the R user community. Additionally, GitHub has recently launched [GitHub Pages](https://help.github.com/articles/what-is-github-pages/), an easy to use tool to generate a web page from a GitHub repository. 
 
 This report, as well as my weekly progress reports were produced using GitHub Pages.
 
