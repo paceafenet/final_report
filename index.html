@@ -25,8 +25,8 @@
   
   
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2019-02-02" />
-  <meta property="article:created" itemprop="dateCreated" content="2019-02-02" />
+  <meta property="article:published" itemprop="datePublished" content="2019-03-10" />
+  <meta property="article:created" itemprop="dateCreated" content="2019-03-10" />
   <meta name="article:author" content="Travis Sondgerath" />
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -44,7 +44,7 @@
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Final Report"]},{"type":"character","attributes":{},"value":["This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Travis Sondgerath"]}]}]},{"type":"character","attributes":{},"value":["2019-02-02"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["radix::radix_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Final Report"]},{"type":"character","attributes":{},"value":["This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Travis Sondgerath"]}]}]},{"type":"character","attributes":{},"value":["2019-03-10"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["radix::radix_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1938,7 +1938,7 @@ distill-header .nav a {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Final Report","description":"This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.","authors":[{"author":"Travis Sondgerath","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2019-02-02T00:00:00.000-06:00","citationText":"Sondgerath, 2019"}
+{"title":"Final Report","description":"This page will focus on the tools used in the development and documentation of this project rather than the results. Other reports will describe these results.","authors":[{"author":"Travis Sondgerath","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2019-03-10T00:00:00.000-06:00","citationText":"Sondgerath, 2019"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1955,7 +1955,7 @@ distill-header .nav a {
 <div class="d-byline">
   Travis Sondgerath  
   
-<br />2019-02-02
+<br />2019-03-10
 </div>
 
 <div class="d-article">
@@ -1981,7 +1981,11 @@ distill-header .nav a {
 <li><a href="#blastula">Blastula</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#deliverable">Deliverable</a></li>
+<li><a href="#deliverables">Deliverables</a><ul>
+<li><a href="#review-of-existing-country-data">1. Review of Existing Country Data</a></li>
+<li><a href="#etool-outline">2. eTool Outline</a></li>
+<li><a href="#etool-technical-outline">3. eTool Technical Outline</a></li>
+</ul></li>
 <li><a href="#conclusions">Conclusions</a></li>
 </ul>
 </nav>
@@ -1994,7 +1998,7 @@ distill-header .nav a {
 <p><a href="https://en.wikipedia.org/wiki/Git">Git</a> is a version control system for tracking changes made to files being worked on by multiple people. Git can be used for many purposes, however, for this project I used Git to update code used for this project and to document progress for accountability. Most of the guidance I used for this project came from a <a href="http://happygitwithr.com/">guidebook</a> developed for using R with Git.</p>
 <p>I downloaded <a href="https://gitforwindows.org/">Git for Windows</a> and paired it with the project Gmail account using the instructions in the guidebook referenced above.</p>
 <h2 id="github">GitHub</h2>
-<p><a href="https://github.com/about">GitHub</a> is a popular repository cite for Git projects with both paid and free account options. There are many other competing repositories, I chose GitHub as it is a very easy to use repository and is very popular among the R user community. Additionally, GitHub has recently launched <a href="https://help.github.com/articles/what-is-github-pages/">GitHub Pages</a>, an easy to use tool to generate a web page from a GitHub repository.</p>
+<p><a href="https://github.com/about">GitHub</a> is a popular repository site for Git projects with both paid and free account options. There are many other competing repositories, I chose GitHub as it is a very easy to use repository and is very popular among the R user community. Additionally, GitHub has recently launched <a href="https://help.github.com/articles/what-is-github-pages/">GitHub Pages</a>, an easy to use tool to generate a web page from a GitHub repository.</p>
 <p>This report, as well as my weekly progress reports were produced using GitHub Pages.</p>
 <h2 id="gitkraken">GitKraken</h2>
 <p>I find it easiest to think of a Git project as a folder directory composed of many files and folders which among other things can contain code. Pushing a Git project to GitHub is like making a copy of the folders that are on your local machine to an online repository using the same directory structure.</p>
@@ -2026,7 +2030,15 @@ distill-header .nav a {
 <p>The <a href="https://rstudio.github.io/DT/">DT</a> library provides an interface to the popular JavaScript DataTables library for making interactive tables. The primary function in this package is the datatables function which allows the developer to control conditional formatting of cells based on values in the table, finer control over column and cell size and formatting, the ability to add a search filter, and the ability to allow the user to edit the underlying data behind the table if desired.</p>
 <h3 id="blastula">Blastula</h3>
 <p>The <a href="https://github.com/rich-iannone/blastula">blastula</a> library can be used to create emails in R. Credentials can be passed to nearly any email service, and using popular services such as gmail is extremely easy to implement using this library. This library converts text, tables, and figures to html that can be passed to the chosen email service. I was asked it it were possible to schedule reports and notify partners to view the eTool, using a library such as blastula is necessary to do this in the absence commercial software.</p>
-<h1 id="deliverable">Deliverable</h1>
+<h1 id="deliverables">Deliverables</h1>
+<h2 id="review-of-existing-country-data">1. Review of Existing Country Data</h2>
+<p>This report is located <a href="https://github.com/paceafenet/etool_dev/blob/master/existing_lab_data_exploration.md">here</a>.</p>
+<p>Because this report contains country-specific information, I wanted it to be visible on the project-specific private GitHub repository only. In this report existing data from a previous country-wide laboratory assessment was described to determine if it would be suitable for use in the eTool.</p>
+<h2 id="etool-outline">2. eTool Outline</h2>
+<p>This report can be downloaded <a href="https://github.com/paceafenet/etool_dev/blob/master/eTool%20Functionality%20Outline.pdf">here</a>. Again, this report was saved on the project GitHub page.</p>
+<p>This report describes functional choices made when designing the eTool. Additionally, a brief outline on how to use the eTool is also included.</p>
+<h2 id="etool-technical-outline">3. eTool Technical Outline</h2>
+<p>This <a href="https://github.com/paceafenet/etool_dev/blob/master/technical_documentation_eTool.pdf">report</a> describes how to download the eTool source code and run your own version of the eTool. Also discussed briefly was how to use the underlying data altered by the eTool. This outline was not meant to be an exhaustive tutorial on how to program in R.</p>
 <h1 id="conclusions">Conclusions</h1>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

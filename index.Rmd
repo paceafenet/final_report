@@ -100,6 +100,21 @@ The [blastula](https://github.com/rich-iannone/blastula) library can be used to 
 
 # Deliverables
 
+## 1. Review of Existing Country Data
+
+This report is located [here](https://github.com/paceafenet/etool_dev/blob/master/existing_lab_data_exploration.md).
+
+Because this report contains country-specific information, I wanted it to be visible on the project-specific private GitHub repository only. In this report existing data from a previous country-wide laboratory assessment was described to determine if it would be suitable for use in the eTool.
+
+## 2. eTool Outline
+
+This report can be downloaded [here](https://github.com/paceafenet/etool_dev/blob/master/eTool%20Functionality%20Outline.pdf). Again, this report was saved on the project GitHub page.
+
+This report describes functional choices made when designing the eTool. Additionally, a brief outline on how to use the eTool is also included.
+
+## 3. eTool Technical Outline
+
+This [report](https://github.com/paceafenet/etool_dev/blob/master/technical_documentation_eTool.pdf) describes how to download the eTool source code and run your own version of the eTool. Also discussed briefly was how to use the underlying data altered by the eTool. This outline was not meant to be an exhaustive tutorial on how to program in R. 
 
 # Conclusions
 
