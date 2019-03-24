@@ -51,7 +51,6 @@ All project analysis was done in [R](https://www.r-project.org/about.html), an o
 ### Tidyverse
 
 The [Tidyverse](https://www.tidyverse.org/) is a collection of libraries developed and popularized by RStudio and RStudio Chief Data Scientist, [Hadley Wickham](https://en.wikipedia.org/wiki/Hadley_Wickham). These libraries are part of the core tool box for any R programmer. Although there are a growing number of libraries that compose the Tidyverse, these libraries are primarily developed to manipulate, describe, and visualize data. Most importantly these libraries have influenced the way the R user community program in R. These libraries introduced now ubiquitous R programming conventions including "pipes" which link functions together and the use of "+" signs to add layers to visuals. It is my personal belief that dplyr and ggplot are the most important libraries in the Tidyverse and were used by me throughout this project. 
-
 ### R Markdown
 
 [R Markdown](https://rmarkdown.rstudio.com/index.html) is a markup framework designed to allow the user to create reports incorporating text, statistical results and visuals. This framework allows for creating reproducible analysis. Although R Markdown allows for many output formats including pdf, html, websites, PowerPoint, etc the interface for programming in R Markdown is meant to be a stripped down version of alternatives like LaTex, which are more complex.
@@ -97,6 +96,12 @@ The [DT](https://rstudio.github.io/DT/) library provides an interface to the pop
 ### Blastula
 
 The [blastula](https://github.com/rich-iannone/blastula) library can be used to create emails in R. Credentials can be passed to nearly any email service, and using popular services such as gmail is extremely easy to implement using this library. This library converts text, tables, and figures to html that can be passed to the chosen email service. I was asked it it were possible to schedule reports and notify partners to view the eTool, using a library such as blastula is necessary to do this in the absence commercial software. 
+
+## RStudio Cloud
+
+This [platform](https://rstudio.cloud) is a virtual R/RStudio environment that can be accessed via an internet web browser currently still in the early testing phases. RStudio Cloud can be used as a teaching and collaboration tool. Accounts are free and users can set up an unlimited number of projects and work spaces. A project is a collection of documents including R scripts that can be shared publicly (with everyone) or privately. 
+
+I created several example tutorials inside the work space that could be used to teach users how to alter and maintain the eTool code.
 
 # Deliverables
 
