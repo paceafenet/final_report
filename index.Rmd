@@ -121,6 +121,8 @@ This report describes functional choices made when designing the eTool. Addition
 
 This [report](https://github.com/paceafenet/etool_dev/blob/master/technical_documentation_eTool.pdf) describes how to download the eTool source code and run your own version of the eTool. Also discussed briefly was how to use the underlying data altered by the eTool. This outline was not meant to be an exhaustive tutorial on how to program in R. 
 
+Additionally, I have created an [RStudio Cloud Workspace]((https://rstudio.cloud/project/255745)) to carefully annotate and explain pertinent eTool-related code including the actual eTool code, the form for adding new equipment information to the project database, and code to generate a google authentication token. This account was created using the project GitHub account credentials and the link to the RStudio Cloud work space can be shared with anyone or restricted to just specific collaborators. This work space is meant to be a tutorial for those with working knowledge of R code on the specific methods used in the code referenced above, as well as things that can be changed or may need to be updated periodically. 
+
 # Conclusions
 
 
